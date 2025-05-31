@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="8" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="planner.controller.AddEventController">
+
+    <children>
+        <TextField fx:id="titleField" promptText="Event Title"/>
+        <DatePicker fx:id="datePicker"/>
+        <TextArea   fx:id="descriptionArea" promptText="Description"
+                    prefRowCount="4"/>
+        <Button text="Save" onAction="#handleSave"/>
+    </children>
+</VBox>

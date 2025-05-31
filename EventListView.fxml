@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="planner.controller.EventListController">
+
+    <center>
+        <ListView fx:id="eventList"
+                  BorderPane.alignment="CENTER"/>
+    </center>
+
+    <bottom>
+        <Button text="Add Event"
+                onAction="#showAddEvent"
+                BorderPane.alignment="CENTER_RIGHT"/>
+    </bottom>
+
+</BorderPane>
